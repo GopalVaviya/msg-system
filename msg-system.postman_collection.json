@@ -1,0 +1,909 @@
+{
+  "info": {
+    "_postman_id": "5c0518e7-abb0-45c6-b5fe-ccbefddfb9fb",
+    "name": "msg-system",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "60451797",
+    "_collection_link": "https://go.postman.co/collection/60451797-5c0518e7-abb0-45c6-b5fe-ccbefddfb9fb?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "tenant",
+      "item": [
+        {
+          "name": "create",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Craft & Co.\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:4000/api/v1/tenant/create",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4000",
+              "path": [
+                "api",
+                "v1",
+                "tenant",
+                "create"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "create Response",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"name\": \"summit studio\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:4000/api/v1/tenant/create",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "4000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "tenant",
+                    "create"
+                  ]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "212"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"d4-bJswjgfuRwknofnpzEPdHaOv4NA\""
+                },
+                {
+                  "key": "Date",
+                  "value": "Fri, 27 Nov 2026 02:01:57 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"message\": \"tenant created successfully\",\n    \"data\": {\n        \"id\": \"1a5c3676-f051-45b5-8997-de2fccb5ad47\",\n        \"name\": \"summit studio\",\n        \"updatedAt\": \"2026-11-27T02:01:56.959Z\",\n        \"createdAt\": \"2026-11-27T02:01:56.959Z\",\n        \"deletedAt\": null\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "health",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:4000/api/v1/tenant/health",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4000",
+              "path": [
+                "api",
+                "v1",
+                "tenant",
+                "health"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "health Response",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:4000/api/v1/tenant/health",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "4000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "tenant",
+                    "health"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "33"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"21-zlk9GcGz53UFm0nrnPNUS3ZqYsw\""
+                },
+                {
+                  "key": "Date",
+                  "value": "Fri, 27 Nov 2026 02:00:12 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": \"ok\",\n    \"module\": \"tenant\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "get all",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:4000/api/v1/tenant/",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4000",
+              "path": [
+                "api",
+                "v1",
+                "tenant",
+                ""
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "get all Response",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:4000/api/v1/tenant/",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "4000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "tenant",
+                    ""
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "343"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"157-xmLvbVw2DTrUpE1V0KeAN5PShnA\""
+                },
+                {
+                  "key": "Date",
+                  "value": "Fri, 27 Nov 2026 02:07:46 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"message\": \"tenants fetched successfully\",\n    \"data\": [\n        {\n            \"id\": \"6049e65c-546f-4c4e-9c86-7413a0e49486\",\n            \"name\": \"Craft & Co.\",\n            \"createdAt\": \"2026-11-27T02:07:24.461Z\",\n            \"updatedAt\": \"2026-11-27T02:07:24.461Z\"\n        },\n        {\n            \"id\": \"1a5c3676-f051-45b5-8997-de2fccb5ad47\",\n            \"name\": \"summit studio\",\n            \"createdAt\": \"2026-11-27T02:01:56.959Z\",\n            \"updatedAt\": \"2026-11-27T02:01:56.959Z\"\n        }\n    ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "get",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:4000/api/v1/tenant/{{tanentId}}",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4000",
+              "path": [
+                "api",
+                "v1",
+                "tenant",
+                "{{tanentId}}"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "get Response",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:4000/api/v1/tenant/{{tanentId}}",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "4000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "tenant",
+                    "{{tanentId}}"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "193"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"c1-SvMZXwH1Nx327xzWOAm62hgBtfc\""
+                },
+                {
+                  "key": "Date",
+                  "value": "Fri, 27 Nov 2026 02:09:09 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"message\": \"tenant fetched successfully\",\n    \"data\": {\n        \"id\": \"6049e65c-546f-4c4e-9c86-7413a0e49486\",\n        \"name\": \"Craft & Co.\",\n        \"createdAt\": \"2026-11-27T02:07:24.461Z\",\n        \"updatedAt\": \"2026-11-27T02:07:24.461Z\"\n    }\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "message",
+      "item": [
+        {
+          "name": "health",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:4000/api/v1/message/health",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4000",
+              "path": [
+                "api",
+                "v1",
+                "message",
+                "health"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "health",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:4000/api/v1/messages/health",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "4000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "messages",
+                    "health"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "34"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"22-pUo3xo8LhN5Hb0DNcZPxJ0iWdTQ\""
+                },
+                {
+                  "key": "Date",
+                  "value": "Fri, 27 Nov 2026 02:27:27 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": \"ok\",\n    \"module\": \"message\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "create",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"tenantId\": \"6049e65c-546f-4c4e-9c86-7413a0e49486\",\r\n  \"conversationId\": \"4\",\r\n  \"to\": \"+917894561230\",\r\n  \"text\": \"hlow\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:4000/api/v1/message/create",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4000",
+              "path": [
+                "api",
+                "v1",
+                "message",
+                "create"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "create Response",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"tenantId\": \"6049e65c-546f-4c4e-9c86-7413a0e49486\",\r\n  \"conversationId\": \"3\",\r\n  \"to\": \"+917894561230\",\r\n  \"text\": \"Hello, how are you?\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:4000/api/v1/messages/create",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "4000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "messages",
+                    "create"
+                  ]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "208"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"d0-ZnPVCItZwsMqfKCV9SwJpFv1GpY\""
+                },
+                {
+                  "key": "Date",
+                  "value": "Fri, 27 Nov 2026 02:29:59 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"success\": true,\n    \"data\": {\n        \"id\": \"7c10a16f-c085-4b13-92c7-255bbf90847f\",\n        \"tenantId\": \"6049e65c-546f-4c4e-9c86-7413a0e49486\",\n        \"conversationId\": \"1\",\n        \"to\": \"+917894561230\",\n        \"text\": \"Hello, how are you?\",\n        \"status\": \"QUEUED\"\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "get",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-tenant-id",
+                "value": "6049e65c-546f-4c4e-9c86-7413a0e49486",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:4000/api/v1/message/{{messageId}}",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4000",
+              "path": [
+                "api",
+                "v1",
+                "message",
+                "{{messageId}}"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "get Response",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "x-tenant-id",
+                    "value": "6049e65c-546f-4c4e-9c86-7413a0e49486",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "http://localhost:4000/api/v1/message/{{messageId}}",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "4000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "message",
+                    "{{messageId}}"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "221"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"dd-x1e4xFdUS36mzdSgIX1vqp7SIWc\""
+                },
+                {
+                  "key": "Date",
+                  "value": "Fri, 27 Nov 2026 03:06:17 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"success\": true,\n    \"data\": {\n        \"id\": \"7c10a16f-c085-4b13-92c7-255bbf90847f\",\n        \"conversationId\": \"1\",\n        \"to\": \"+917894561230\",\n        \"text\": \"Hello, how are you?\",\n        \"status\": \"QUEUED\",\n        \"sentAt\": null,\n        \"deliveredAt\": null,\n        \"readAt\": null,\n        \"failedAt\": null\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "conversation",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-tenant-id",
+                "value": "6049e65c-546f-4c4e-9c86-7413a0e49486",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:4000/api/v1/message/conversation/{{conversationId}}?skip=0&limit=10",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4000",
+              "path": [
+                "api",
+                "v1",
+                "message",
+                "conversation",
+                "{{conversationId}}"
+              ],
+              "query": [
+                {
+                  "key": "skip",
+                  "value": "0"
+                },
+                {
+                  "key": "limit",
+                  "value": "10"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "conversation Response",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "x-tenant-id",
+                    "value": "6049e65c-546f-4c4e-9c86-7413a0e49486",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "http://localhost:4000/api/v1/message/{{conversationId}}?skip=0&limit=10",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "4000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "message",
+                    "{{conversationId}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "skip",
+                      "value": "0"
+                    },
+                    {
+                      "key": "limit",
+                      "value": "10"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "X-Powered-By",
+                  "value": "Express"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "271"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"10f-6v0J9qtAnVB1cW0PRxk/UNJhzxk\""
+                },
+                {
+                  "key": "Date",
+                  "value": "Fri, 27 Nov 2026 03:19:07 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"success\": true,\n    \"data\": [\n        {\n            \"id\": \"7c10a16f-c085-4b13-92c7-255bbf90847f\",\n            \"conversationId\": \"1\",\n            \"text\": \"Hello, how are you?\",\n            \"status\": \"QUEUED\"\n        },\n        {\n            \"id\": \"85e31335-753d-415d-9e17-3a632704b22d\",\n            \"conversationId\": \"1\",\n            \"text\": \"Hi\",\n            \"status\": \"QUEUED\"\n        }\n    ],\n    \"pagination\": {\n        \"limit\": 10,\n        \"skip\": 0\n    }\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "webhooks",
+      "item": [
+        {
+          "name": "health",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:4000/api/v1/webhooks/health",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4000",
+              "path": [
+                "api",
+                "v1",
+                "webhooks",
+                "health"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "health Response",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:4000/api/v1/webhooks/health",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "4000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "webhooks",
+                    "health"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "X-Powered-By",
+                  "value": "Express"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "34"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"22-jRHfeg75QHGCq1/Fra2Ei0hfdKk\""
+                },
+                {
+                  "key": "Date",
+                  "value": "Fri, 27 Nov 2026 03:21:24 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": \"ok\",\n    \"module\": \"webhook\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "provider",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"eventId\": \"event-003\",\r\n  \"messageId\": \"610841e0-d0b6-4a68-bc5b-8453dc7ba1ec\",\r\n//   \"status\": \"DELIVERED\",\r\n\"status\": \"SENT\",\r\n  \"occurredAt\": \"2026-11-27T10:30:00Z\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:4000/api/v1/webhooks/provider",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4000",
+              "path": [
+                "api",
+                "v1",
+                "webhooks",
+                "provider"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "provider Response",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"eventId\": \"event-001\",\r\n  \"messageId\": \"7c10a16f-c085-4b13-92c7-255bbf90847f\",\r\n  \"status\": \"DELIVERED\",\r\n  \"occurredAt\": \"2026-11-27T10:30:00Z\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:4000/api/v1/webhooks/provider",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "4000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "webhooks",
+                    "provider"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "X-Powered-By",
+                  "value": "Express"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "258"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"102-bfiHpx+CdUtc7JpjtbQM0N1KlSM\""
+                },
+                {
+                  "key": "Date",
+                  "value": "Fri, 27 Nov 2026 03:23:22 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"success\": true,\n    \"duplicate\": false,\n    \"data\": {\n        \"eventId\": \"event-001\",\n        \"messageId\": \"7c10a16f-c085-4b13-92c7-255bbf90847f\",\n        \"eventStatus\": \"DELIVERED\",\n        \"occurredAt\": \"2026-11-27T10:30:00.000Z\",\n        \"processingResult\": \"PROCESSED\",\n        \"messageStatus\": \"DELIVERED\",\n        \"processed\": true\n    }\n}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "tanentId",
+      "value": "",
+      "type": "default"
+    },
+    {
+      "key": "messageId",
+      "value": "",
+      "type": "default"
+    },
+    {
+      "key": "tenantId",
+      "value": "",
+      "type": "default"
+    },
+    {
+      "key": "conversationId",
+      "value": "",
+      "type": "default"
+    }
+  ]
+}
